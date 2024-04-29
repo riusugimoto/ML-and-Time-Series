@@ -14,7 +14,7 @@ import statistics
 ################################################################################
 # DATA DECOMPOSITION
 # File data for Total solar income
-nc_file = nc.Dataset('/Users/vvalterroy/Documents/PHY408 Report/total solar energy income data')
+nc_file = nc.Dataset('total solar energy income data')
 time_data = nc_file.variables['time']
 time_values = time_data[:]
 time_units = time_data.units
@@ -28,7 +28,7 @@ for i in range(len(time_values)):
 
 
 # File data for Glabal annual average tempreture
-filename_temp = "/Users/vvalterroy/Documents/PHY408 Report/Tempreture changes data.txt"
+filename_temp = "Tempreture changes data.txt"
 with open(filename_temp, "r") as file:
     data = file.readlines()
 data = data[5:]
@@ -46,7 +46,7 @@ for line in data:
     
 
 # File data for CO2 concentration level on the atmosphere
-filename_co2 = "/Users/vvalterroy/Documents/PHY408 Report/co2_mm_mlo.txt"
+filename_co2 = "co2_mm_mlo.txt"
 with open(filename_co2, "r") as file:
     data_co2 = file.readlines()
 
