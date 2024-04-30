@@ -115,6 +115,7 @@ fft_tsi_1[index_cutoff_1_2] = 0
 tsi_1 = np.fft.ifft(np.fft.ifftshift(fft_tsi_1))
 tsi_1 = tsi_1 + minor_tsi
 
+#riu
 plt.plot(year_tsi,tsi_1)
 plt.xlabel("year")
 plt.ylabel("Solar energy income in watt")
